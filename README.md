@@ -2,8 +2,7 @@
 aygazmakineogrenmesibootcamp
 Kredi Kartları Skor Verisi İle Makine Öğrenmesi
 
-Proje Url:
-https://www.kaggle.com/code/osmankaraahmetolu/kredi-skor-verisi-makine-renmesi-bootcamp
+Proje Url: https://www.kaggle.com/code/osmankaraahmetolu/kredi-skor-verisi-makine-renmesi-bootcamp
 
 Kaggle sitesindeki https://www.kaggle.com/datasets/ayushsharma0812/dataset-for-credit-score-classification linkindeki Kresi Skor verisetinin (Dataset for Credit Score Classification) keşifsel veri analizi aşağıda sunulmuştur.
 
