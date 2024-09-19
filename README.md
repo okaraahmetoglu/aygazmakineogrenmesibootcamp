@@ -195,3 +195,20 @@ Model 19 değişkenden oluşur. Veri kümesindeki 19 değişken kullanılarak ol
 Gözetimli Öğrenme Algoritmaları:
 
 Decision Tree Algoritması
+
+Cross validation score'lara yaklaşık %67 doğrulukta tahmin yapılmıştır. 
+
+Şimdi KNN algoritmasını deneyelim.
+KNN Algoritmasında Cross validation score'lara yaklaşık %62 doğrulukta tahmin yapılmıştır.
+
+
+Gözetimsiz Öğrenme
+Gaussian Mixture Algoritmaları ve K-ortalamalar algoritmaları kümeleme yapıldı.
+
+Hiperparametre Tuning
+
+Decision Tree sınıflandırıcısında hiperparemetre tuning sonucunda başarım %67 den %70'e çıktı. Birde değişkenlere normalizasyon ekleyelim.
+
+x Değişkenlerinin normalize edilmesi sonuca etki etmedi.
+
+KNN Algoritmasında hiper parametre tuning sonucunda yaklaşık %66 doğrulukta tahmin ile öncekine göre %4 lük iyileştirme sağlanmıştır.
