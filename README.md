@@ -43,7 +43,7 @@ df.info komutu veri kümesi ile ilgili genel bilgiler verir. Veri kümesinde 28 
  24  Amount_invested_monthly   95521 non-null   object 
  25  Payment_Behaviour         100000 non-null  object 
  26  Monthly_Balance           98800 non-null   object 
- 27  Credit_Score              100000 non-null  object 
+ 27  Credit_Score              100000 non-null  object
 
 df.describe() metodu ile veri alanları ile ilgili özet bilgilerle veri açıklanmaya ve analiz için fayda sağlayacak bilgiler edinilmeye çalışılacaktır. Bu komut ile veri kümesi ile ilgili kolon değerlerine kayıt sayısı, ortalama, frekans ve standarde deviation gibi hesaplamalar yapılarak veri analiz edilir.
 
