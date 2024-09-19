@@ -204,6 +204,7 @@ KNN Algoritmasında Cross validation score'lara yaklaşık %62 doğrulukta tahmi
 
 Gözetimsiz Öğrenme
 Gaussian Mixture Algoritmaları ve K-ortalamalar algoritmaları kümeleme yapıldı.
+K-ortalamalarda Ortalan CV Skoru:  -79162829943736.5 çok yüksek bir değer.
 
 Hiperparametre Tuning
 
