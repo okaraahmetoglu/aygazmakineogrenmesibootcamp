@@ -165,3 +165,33 @@ drop_dataframe["Credit_Mix"].unique()
 
 Anlamsız değerler içeren satırlar veri kümesinden silindikten sonra veri kümesinde 50144  kayıt kalır.
 
+Model verileri kullanılarak öğrenme admına geçmeden önceki son veri temizleme adımı modeldeki kategorik değişkenleri label encodin algoritması ile nümerik değerler ile etiketlemek olacaktır.
+
+Modeldeki kategorik değişkenlerimiz, Occupation, Credit_Mix,Payment_of_Min_Amount,Payment_Behaviour,Credit_Score
+Label Encoding yöntemi ile  0 dan başlayan sayı değerleri ile kodlanmıştır.
+
+Etiketlenmiş Kategorik değişkenler kendi kolon isimleri ile kaydedilip, yeni kolonlar aşağıdaki komut ile silinir.
+drop_dataframe.drop(['Occupation','Credit_Mix','Payment_of_Min_Amount','Payment_Behaviour','Credit_Score'],inplace=True, axis=1)
+
+drop_dataframe.rename(columns={'COccupation': 'Occupation', 'CCredit_Mix': 'Credit_Mix', 'CPayment_of_Min_Amount': 'Payment_of_Min_Amount','CPayment_Behaviour': 'Payment_Behaviour','CCredit_Score': 'Credit_Score'}, inplace=True)
+
+Oluşan son veri kümesinde nümerik olmayan değer içeren satırlar silinir.
+
+numeric_df = drop_dataframe.apply(pd.to_numeric, errors='coerce')
+numeric_df =numeric_df.dropna()
+numeric_df.info()
+
+Veri kümesi kolonlarında nümerik olmayan değer içeren satırlar yukarıdaki komut ile temizlendikten sonra elimizde 37846 kayıt kalır.
+
+
+Aşağıdaki kod parçası ile m modelin x ve y veri kümesi oluşturulur.
+
+y_DataSet = numeric_df["Credit_Score"]
+x_DataSet = numeric_df.copy()
+x_DataSet = x_DataSet.drop(["Credit_Score"], axis=1)
+
+Model 19 değişkenden oluşur. Veri kümesindeki 19 değişken kullanılarak oluşturulan model Credit_Score y değişkenini tahmin etmeye çalışır.
+
+Gözetimli Öğrenme Algoritmaları:
+
+Decision Tree Algoritması
